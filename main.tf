@@ -12,7 +12,6 @@ resource "azuread_application" "main" {
   identifier_uris = [
     format("http://%s", var.name)
   ]
-  available_to_other_tenants = false
 }
 
 resource "azuread_service_principal" "main" {
